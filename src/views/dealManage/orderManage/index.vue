@@ -214,33 +214,6 @@ export default {
       })
     },
     changeState (row) {
-      // if (row.dealState == "待付款") {
-      //   this.change({
-      //     id: row.id,
-      //     number: row.number,
-      //     dealState: "待发货"
-      //   })
-      // } else if (row.dealState == "待发货") {
-      //   this.change({
-      //     id: row.id,
-      //     number: row.number,
-      //     dealState: "待收货"
-      //   })
-
-      // } else if (row.dealState == "待收货") {
-      //   this.change({
-      //     id: row.id,
-      //     number: row.number,
-      //     dealState: "待评价"
-      //   })
-
-      // } else if (row.dealState == "待评价") {
-      //   this.change({
-      //     id: row.id,
-      //     number: row.number,
-      //     dealState: "待付款"
-      //   })
-      // }
       if (row.dealState == "待发货") {
         this.$confirm('状态更改为待收货, 是否继续?', '温馨提示', {
           confirmButtonText: '确定',
@@ -269,11 +242,7 @@ export default {
           })
         })
       }
-      //   this.change({
-      //     id: row.id,
-      //     number: row.number,
-      //     dealState: "待收货"
-      //   })
+
     },
   },
   created () {

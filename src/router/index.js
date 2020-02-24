@@ -22,7 +22,7 @@ export const constantRoutes = [{
     path: '/',
     component: Layout,
     redirect: '/dashboard',
-    hidden:true,
+    hidden: true,
     children: [{
       path: 'dashboard',
       name: 'dashboard',
@@ -252,14 +252,24 @@ export const constantRoutes = [{
       icon: 'example'
     },
     children: [{
-        path: 'refundManage',
-        name: 'refundManage',
-        component: () => import('@/views/customerService/refundManage/index'),
+        path: 'returns',
+        name: 'returns',
+        component: () =>
+          import('@/views/customerService/returns/index'),
         meta: {
-          title: '退款管理',
-          icon: 'table'
+          title: '售后管理',
+          icon: 'tree'
         }
       },
+      // {
+      //   path: 'refundManage',
+      //   name: 'refundManage',
+      //   component: () => import('@/views/customerService/refundManage/index'),
+      //   meta: {
+      //     title: '退款管理',
+      //     icon: 'table'
+      //   }
+      // },
       {
         path: 'criminalRecords',
         name: 'criminalRecords',
@@ -279,17 +289,8 @@ export const constantRoutes = [{
           title: '聊天记录',
           icon: 'tree'
         }
-      },
-      {
-        path: 'returns',
-        name: 'returns',
-        component: () =>
-          import('@/views/customerService/returns/index'),
-        meta: {
-          title: '退货退款服务',
-          icon: 'tree'
-        }
       }
+
     ]
   },
   // 消费者管理
