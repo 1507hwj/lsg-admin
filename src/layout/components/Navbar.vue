@@ -2,9 +2,9 @@
   <div>
     <div class="navbar">
       <!-- 导航收缩按钮 -->
-      <!-- <hamburger :is-active="sidebar.opened" class="hamburger-container" @toggleClick="toggleSideBar" /> -->
+      <hamburger :is-active="sidebar.opened" class="hamburger-container" @toggleClick="toggleSideBar" />
       <!-- 抽屉 -->
-      <!-- <breadcrumb class="breadcrumb-container" /> -->
+      <breadcrumb class="breadcrumb-container" />
       <div class="right-menu">
         <div class="home" @click="gotohome">
           首页
@@ -14,7 +14,7 @@
         <!-- <div class="home">
           设置
         </div> -->
-        <el-dropdown class="avatar-container" trigger="click">
+        <!-- <el-dropdown class="avatar-container" trigger="click">
           <div class="avatar-wrapper">
             <span style="vertical-align:middle;margin-right:10px">设置</span>
             <i class="el-icon-caret-bottom" style="vertical-align:middle;" />
@@ -29,11 +29,10 @@
               <span style="display:block;" @click="logout">皮肤</span>
             </el-dropdown-item>
           </el-dropdown-menu>
-        </el-dropdown>
+        </el-dropdown> -->
         <el-dropdown class="avatar-container" trigger="click">
           <div class="avatar-wrapper">
             <img src='@/assets/user.png' style="width:36px;height:36px;vertical-align:middle;margin-right:3px">
-            <!-- <span style="vertical-align:middle;margin-right:10px">{{getUserName}}</span> -->
             <i class="el-icon-caret-bottom" style="vertical-align:middle;" />
           </div>
           <el-dropdown-menu slot="dropdown" class="user-dropdown">
@@ -54,7 +53,7 @@
 
 <script>
 import { mapGetters } from 'vuex'
-// import Breadcrumb from '@/components/Breadcrumb'
+import Breadcrumb from '@/components/Breadcrumb'
 import Hamburger from '@/components/Hamburger'
 import Screenfull from '@/layout/components/Screenfull/index'
 
@@ -62,7 +61,7 @@ import { getName, setName, removeName } from '@/utils/auth'
 
 export default {
   components: {
-    // Breadcrumb,
+    Breadcrumb,
     Hamburger,
     Screenfull
   },

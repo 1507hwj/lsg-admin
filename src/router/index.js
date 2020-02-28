@@ -51,68 +51,68 @@ export const constantRoutes = [{
           icon: 'table'
         }
       },
-      {
-        path: 'evaluteManage',
-        name: 'evaluteManage',
-        component: () => import('@/views/dealManage/evaluteManage/index'),
-        meta: {
-          title: '评价管理',
-          icon: 'tree'
-        }
-      },
+      // {
+      //   path: 'evaluteManage',
+      //   name: 'evaluteManage',
+      //   component: () => import('@/views/dealManage/evaluteManage/index'),
+      //   meta: {
+      //     title: '评价管理',
+      //     icon: 'tree'
+      //   }
+      // },
 
     ]
   },
   // 物流管理
-  {
-    path: '/logisticsManage',
-    component: Layout,
-    redirect: '/logisticsManage/shipments',
-    name: 'logisticsManage',
-    meta: {
-      title: '物流管理',
-      icon: 'example'
-    },
-    children: [{
-        path: 'shipments',
-        name: 'shipments',
-        component: () => import('@/views/logisticsManage/shipments/index'),
-        meta: {
-          title: '发货',
-          icon: 'table'
-        }
-      },
-      {
-        path: 'logisticsTools',
-        name: 'logisticsTools',
-        component: () => import('@/views/logisticsManage/logisticsTools/index'),
-        meta: {
-          title: '物流工具',
-          icon: 'tree'
-        }
-      },
-      {
-        path: 'logisticsService',
-        name: 'logisticsService',
-        component: () =>
-          import('@/views/logisticsManage/logisticsService/index'),
-        meta: {
-          title: '物流服务',
-          icon: 'tree'
-        }
-      },
-      {
-        path: 'expressDelivery',
-        name: 'expressDelivery',
-        component: () =>
-          import('@/views/logisticsManage/expressDelivery/index'),
-        meta: {
-          title: '我要寄快递',
-          icon: 'tree'
-        }
-      }
-    ]
-  },
+  // {
+  //   path: '/logisticsManage',
+  //   component: Layout,
+  //   redirect: '/logisticsManage/shipments',
+  //   name: 'logisticsManage',
+  //   meta: {
+  //     title: '物流管理',
+  //     icon: 'example'
+  //   },
+  //   children: [{
+  //       path: 'shipments',
+  //       name: 'shipments',
+  //       component: () => import('@/views/logisticsManage/shipments/index'),
+  //       meta: {
+  //         title: '发货',
+  //         icon: 'table'
+  //       }
+  //     },
+  //     {
+  //       path: 'logisticsTools',
+  //       name: 'logisticsTools',
+  //       component: () => import('@/views/logisticsManage/logisticsTools/index'),
+  //       meta: {
+  //         title: '物流工具',
+  //         icon: 'tree'
+  //       }
+  //     },
+  //     {
+  //       path: 'logisticsService',
+  //       name: 'logisticsService',
+  //       component: () =>
+  //         import('@/views/logisticsManage/logisticsService/index'),
+  //       meta: {
+  //         title: '物流服务',
+  //         icon: 'tree'
+  //       }
+  //     },
+  //     {
+  //       path: 'expressDelivery',
+  //       name: 'expressDelivery',
+  //       component: () =>
+  //         import('@/views/logisticsManage/expressDelivery/index'),
+  //       meta: {
+  //         title: '我要寄快递',
+  //         icon: 'tree'
+  //       }
+  //     }
+  //   ]
+  // },
   // 药品管理
   {
     path: '/drugManage',
@@ -144,83 +144,83 @@ export const constantRoutes = [{
     ]
   },
   // 药房管理
-  {
-    path: '/pharmacyManage',
-    component: Layout,
-    redirect: '/pharmacyManage/editPharmacy',
-    name: 'pharmacyManage',
-    meta: {
-      title: '药品管理',
-      icon: 'example'
-    },
-    children: [{
-      path: 'editPharmacy',
-      name: 'editPharmacy',
-      component: () => import('@/views/pharmacyManage/editPharmacy/index'),
-      meta: {
-        title: '编辑药房',
-        icon: 'table'
-      }
-    }]
-  },
+  // {
+  //   path: '/pharmacyManage',
+  //   component: Layout,
+  //   redirect: '/pharmacyManage/editPharmacy',
+  //   name: 'pharmacyManage',
+  //   meta: {
+  //     title: '药品管理',
+  //     icon: 'example'
+  //   },
+  //   children: [{
+  //     path: 'editPharmacy',
+  //     name: 'editPharmacy',
+  //     component: () => import('@/views/pharmacyManage/editPharmacy/index'),
+  //     meta: {
+  //       title: '编辑药房',
+  //       icon: 'table'
+  //     }
+  //   }]
+  // },
   // 营销中心
-  {
-    path: '/marketingCenter',
-    component: Layout,
-    redirect: '/marketingCenter/advertisingManage',
-    name: 'marketingCenter',
-    meta: {
-      title: '营销中心',
-      icon: 'example'
-    },
-    children: [{
-      path: 'advertisingManage',
-      name: 'advertisingManage',
-      component: () =>
-        import('@/views/marketingCenter/advertisingManage/index'),
-      meta: {
-        title: '广告管理',
-        icon: 'table'
-      }
-    }]
-  },
+  // {
+  //   path: '/marketingCenter',
+  //   component: Layout,
+  //   redirect: '/marketingCenter/advertisingManage',
+  //   name: 'marketingCenter',
+  //   meta: {
+  //     title: '营销中心',
+  //     icon: 'example'
+  //   },
+  //   children: [{
+  //     path: 'advertisingManage',
+  //     name: 'advertisingManage',
+  //     component: () =>
+  //       import('@/views/marketingCenter/advertisingManage/index'),
+  //     meta: {
+  //       title: '广告管理',
+  //       icon: 'table'
+  //     }
+  //   }]
+  // },
   // 进销存
-  {
-    path: '/buySaleBase',
-    component: Layout,
-    redirect: '/buySaleBase/sourcingManage',
-    name: 'buySaleBase',
-    meta: {
-      title: '进销存',
-      icon: 'example'
-    },
-    children: [{
-        path: 'sourcingManage',
-        name: 'sourcingManage',
-        component: () => import('@/views/buySaleBase/sourcingManage/index'),
-        meta: {
-          title: '货源管理',
-          icon: 'table'
-        }
-      },
-      {
-        path: 'purchaseManage',
-        name: 'purchaseManage',
-        component: () => import('@/views/buySaleBase/purchaseManage/index'),
-        meta: {
-          title: '采购管理',
-          icon: 'tree'
-        }
-      },
-      {
-        path: 'repertoryManage',
-        name: 'repertoryManage',
-        component: () => import('@/views/buySaleBase/repertoryManage/index'),
-        meta: {
-          title: '库存管理',
-          icon: 'tree'
-        }
-      }
+  // {
+  //   path: '/buySaleBase',
+  //   component: Layout,
+  //   redirect: '/buySaleBase/sourcingManage',
+  //   name: 'buySaleBase',
+  //   meta: {
+  //     title: '进销存',
+  //     icon: 'example'
+  //   },
+  //   children: [{
+  //       path: 'sourcingManage',
+  //       name: 'sourcingManage',
+  //       component: () => import('@/views/buySaleBase/sourcingManage/index'),
+  //       meta: {
+  //         title: '货源管理',
+  //         icon: 'table'
+  //       }
+  //     },
+  //     {
+  //       path: 'purchaseManage',
+  //       name: 'purchaseManage',
+  //       component: () => import('@/views/buySaleBase/purchaseManage/index'),
+  //       meta: {
+  //         title: '采购管理',
+  //         icon: 'tree'
+  //       }
+  //     },
+  //     {
+  //       path: 'repertoryManage',
+  //       name: 'repertoryManage',
+  //       component: () => import('@/views/buySaleBase/repertoryManage/index'),
+  //       meta: {
+  //         title: '库存管理',
+  //         icon: 'tree'
+  //       }
+  //     }
       // {
       //   path: 'distributionManage',
       //   name: 'distributionManage',
@@ -239,8 +239,8 @@ export const constantRoutes = [{
       //     icon: 'tree'
       //   }
       // }
-    ]
-  },
+    // ]
+  // },
   // 客户服务
   {
     path: '/customerService',
@@ -270,26 +270,26 @@ export const constantRoutes = [{
       //     icon: 'table'
       //   }
       // },
-      {
-        path: 'criminalRecords',
-        name: 'criminalRecords',
-        component: () =>
-          import('@/views/customerService/criminalRecords/index'),
-        meta: {
-          title: '违规记录',
-          icon: 'tree'
-        }
-      },
-      {
-        path: 'chattingRecords',
-        name: 'chattingRecords',
-        component: () =>
-          import('@/views/customerService/chattingRecords/index'),
-        meta: {
-          title: '聊天记录',
-          icon: 'tree'
-        }
-      }
+      // {
+      //   path: 'criminalRecords',
+      //   name: 'criminalRecords',
+      //   component: () =>
+      //     import('@/views/customerService/criminalRecords/index'),
+      //   meta: {
+      //     title: '违规记录',
+      //     icon: 'tree'
+      //   }
+      // },
+      // {
+      //   path: 'chattingRecords',
+      //   name: 'chattingRecords',
+      //   component: () =>
+      //     import('@/views/customerService/chattingRecords/index'),
+      //   meta: {
+      //     title: '聊天记录',
+      //     icon: 'tree'
+      //   }
+      // }
 
     ]
   },
@@ -341,15 +341,6 @@ export const constantRoutes = [{
           icon: 'tree'
         }
       },
-      // {
-      //   path: 'distributionManage',
-      //   name: 'distributionManage',
-      //   component: () => import('@/views/distributeManage/distributionManage/index'),
-      //   meta: {
-      //     title: '绑定解绑记录',
-      //     icon: 'tree'
-      //   }
-      // },
       {
         path: 'bindRelation',
         name: 'bindRelation',
@@ -362,25 +353,25 @@ export const constantRoutes = [{
     ]
   },
   // 用户管理
-  {
-    path: '/userManage',
-    component: Layout,
-    redirect: '/userManage/consumManage',
-    name: 'userManage',
-    meta: {
-      title: '用户管理',
-      icon: 'example'
-    },
-    children: [{
-      path: 'consumManage',
-      name: 'consumManage',
-      component: () => import('@/views/userManage/consumManage/index'),
-      meta: {
-        title: '用户管理',
-        icon: 'table'
-      }
-    }]
-  },
+  // {
+  //   path: '/userManage',
+  //   component: Layout,
+  //   redirect: '/userManage/consumManage',
+  //   name: 'userManage',
+  //   meta: {
+  //     title: '用户管理',
+  //     icon: 'example'
+  //   },
+  //   children: [{
+  //     path: 'consumManage',
+  //     name: 'consumManage',
+  //     component: () => import('@/views/userManage/consumManage/index'),
+  //     meta: {
+  //       title: '用户管理',
+  //       icon: 'table'
+  //     }
+  //   }]
+  // },
   // 活动管理
   {
     path: '/activityManage',
@@ -400,15 +391,15 @@ export const constantRoutes = [{
           icon: 'table'
         }
       },
-      {
-        path: 'activityEvent',
-        name: 'activityEvent',
-        component: () => import('@/views/activityManage/activityEvent/index'),
-        meta: {
-          title: '活动事件',
-          icon: 'table'
-        }
-      }
+      // {
+      //   path: 'activityEvent',
+      //   name: 'activityEvent',
+      //   component: () => import('@/views/activityManage/activityEvent/index'),
+      //   meta: {
+      //     title: '活动事件',
+      //     icon: 'table'
+      //   }
+      // }
     ]
   },
   {

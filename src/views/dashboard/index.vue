@@ -4,7 +4,7 @@
       <span style="font-size:30px;">六顺购</span>
       后台管理系统
     </h2>
-    <div class="box18">
+    <!-- <div class="box18">
       <div class="item">
         <p class="title">
           <i></i>
@@ -63,7 +63,7 @@
           </el-table-column>
         </el-table>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -161,7 +161,7 @@ export default {
   text-align: center;
   font-weight: normal;
   margin-bottom: 30px;
-  font-style: italic;
+  // font-style: italic;
 }
 .fr {
   float: right;

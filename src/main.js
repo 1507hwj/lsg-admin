@@ -24,17 +24,17 @@ import i18n from './lang' // Internationalization
 import axios from 'axios'
 
 const instance1 = axios.create({
-  baseURL: 'http://192.168.1.171:8443'
+  baseURL: 'http://39.107.33.189:8443'
   //   baseURL: 'http://39.107.33.189:8443'
 
 })
 const instance2 = axios.create({
-  baseURL: 'http://120.25.214.5:8082'
+  baseURL: 'http://39.107.33.189:8443'
   //   baseURL: 'http://39.107.33.189:8443'
 })
 
 const instance3 = axios.create({
-  baseURL: 'http://120.25.214.5:8082'
+  baseURL: 'http://39.107.33.189:8443'
   //   baseURL: 'http://39.107.33.189:8443'
 })
 
